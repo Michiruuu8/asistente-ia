@@ -16,7 +16,8 @@ def preguntar_al_llm(mensaje_usuario):
         contents=mensaje_usuario,
         config=types.GenerateContentConfig(
             system_instruction=INSTRUCCION_SISTEMA,
-            max_output_tokens=300
+            max_output_tokens=500,
+            thinking_config=types.ThinkingConfig(thinking_budget=0)
         )
     )
     return respuesta.text
