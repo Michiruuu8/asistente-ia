@@ -1,0 +1,9 @@
+{
+  "clima": 0,
+  "hora": 1,
+  "recordatorio": 2,
+  "musica": 3,
+  "busqueda": 4,
+  "saludo": 5,
+  "conversacion": 6
+}
