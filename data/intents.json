@@ -7,7 +7,9 @@
     "va a hacer sol",
     "cual es la temperatura",
     "hace calor hoy",
-    "va a nevar"
+    "va a nevar",
+    "esta nublado",
+    "hace viento"
   ],
   "hora": [
     "que hora es",
@@ -15,7 +17,8 @@
     "que horas son",
     "podrias decirme la hora",
     "a que hora estamos",
-    "sabes que hora es"
+    "sabes que hora es",
+    "me puedes decir la hora"
   ],
   "recordatorio": [
     "recuerdame comprar leche",
@@ -24,7 +27,12 @@
     "avisame manana a las 9",
     "crea un recordatorio",
     "recuerdame llamar a mi mama",
-    "agenda una cita para el lunes"
+    "agenda una cita para el lunes",
+    "no olvides comprar pan",
+    "no te olvides de recordarme la junta",
+    "no dejes pasar mi cita del doctor",
+    "acuerdame de pagar la renta",
+    "no se te olvide avisarme del examen"
   ],
   "musica": [
     "pon musica",
@@ -58,6 +66,11 @@
     "eres una inteligencia artificial",
     "de donde eres",
     "quien te creo",
-    "gracias"
+    "gracias",
+    "cuentame algo gracioso",
+    "dime algo divertido",
+    "hazme reir",
+    "sabes algo curioso",
+    "cuentame algo interesante"
   ]
 }
