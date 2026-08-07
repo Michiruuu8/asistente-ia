@@ -1,0 +1,63 @@
+{
+  "clima": [
+    "que clima hace hoy",
+    "va a llover",
+    "hace frio afuera",
+    "como esta el clima",
+    "va a hacer sol",
+    "cual es la temperatura",
+    "hace calor hoy",
+    "va a nevar"
+  ],
+  "hora": [
+    "que hora es",
+    "dime la hora",
+    "que horas son",
+    "podrias decirme la hora",
+    "a que hora estamos",
+    "sabes que hora es"
+  ],
+  "recordatorio": [
+    "recuerdame comprar leche",
+    "ponme un recordatorio",
+    "no dejes que se me olvide la reunion",
+    "avisame manana a las 9",
+    "crea un recordatorio",
+    "recuerdame llamar a mi mama",
+    "agenda una cita para el lunes"
+  ],
+  "musica": [
+    "pon musica",
+    "reproduce una cancion",
+    "sube el volumen",
+    "baja el volumen",
+    "pausa la musica",
+    "siguiente cancion",
+    "pon algo de rock"
+  ],
+  "busqueda": [
+    "busca informacion sobre python",
+    "quien invento la bombilla",
+    "que es la inteligencia artificial",
+    "busca en internet sobre gatos",
+    "investiga sobre historia de mexico",
+    "que significa la palabra efimero"
+  ],
+  "saludo": [
+    "hola",
+    "buenos dias",
+    "buenas tardes",
+    "que tal",
+    "hola como estas",
+    "buenas noches"
+  ],
+  "conversacion": [
+    "como te llamas",
+    "que puedes hacer",
+    "cuentame un chiste",
+    "eres una inteligencia artificial",
+    "de donde eres",
+    "quien te creo",
+    "gracias"
+  ]
+}
