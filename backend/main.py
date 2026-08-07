@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
+
 import sys
 import os
 
@@ -7,18 +8,18 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from model.predict import predict
 from skills import hora as skill_hora
+from backend.gemini_client import preguntar_al_llm
 
 app = FastAPI(title="Asistente IA - Backend")
 
 class Mensaje(BaseModel):
     texto: str
 
-# Aqui mapeamos que intencion activa que skill.
-# Las intenciones que no aparecen aqui (conversacion, saludo, busqueda)
-# mas adelante las mandaremos a Claude.
 SKILLS_DISPONIBLES = {
     "hora": skill_hora.ejecutar,
 }
+
+UMBRAL_CONFIANZA = 60.0
 
 @app.get("/")
 def home():
@@ -28,10 +29,10 @@ def home():
 def chat(mensaje: Mensaje):
     intencion, confianza = predict(mensaje.texto)
 
-    if intencion in SKILLS_DISPONIBLES:
+    if intencion in SKILLS_DISPONIBLES and confianza >= UMBRAL_CONFIANZA:
         respuesta = SKILLS_DISPONIBLES[intencion]()
     else:
-        respuesta = f"(Todavia no tengo una skill para '{intencion}', pronto conectare con Claude para esto)"
+        respuesta = preguntar_al_llm(mensaje.texto)
 
     return {
         "texto_recibido": mensaje.texto,
